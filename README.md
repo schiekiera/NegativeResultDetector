@@ -17,7 +17,7 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
 > **Methods:** We will classify and evaluate 2,469 abstracts from clinical psychology research using supervised machine learning models like Random Forest and SciBERT, trained on human-annotated data. The performance of these models will be validated against other abstract sets. Using these models, we aim to predict the positivity of results in a large sample of unannotated abstracts dating from 1990 to 2023, helping us to explore if open science trends align with an increase in negative or mixed results.
 > **Results:** Our preliminary results indicate that the SciBERT model outperforms the other models in accuracy, providing promising groundwork for further research and implementation.
  
- 
+  
 ## Preliminary Results
 |              | Accuracy | F1   | Recall | Precision | F1    | Recall | Precision |
 |--------------|----------|------|--------|-----------|-------|--------|-----------|
