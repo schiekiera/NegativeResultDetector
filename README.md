@@ -1,6 +1,9 @@
 # PubBiasDetect
 Documentation, code and data for the project "Publication Bias Research in Clincial Psychology Using Natural Language Processing" by Louis Schiekiera
 
+![alt text](https://github.com/PsyCapsLock/PubBiasDetect/blob/main/img/inference_longitudinal_comparison.jpg?raw=true)
+
+
 ## Table of Contents
 
 - [Abstract](#abstract)
@@ -21,12 +24,19 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
    
 ## Results
 
+|                  | Accuracy | Mixed & Negative Results |  |  | Positive Results Only |  |  |
+|------------------|----------|---|--------|-----------|---|--------|-----------|
+|                  |          | F1| Recall | Precision | F1| Recall | Precision |
+|------------------|----------|---|--------|-----------|---|--------|-----------|
+| SciBERT          | **0.864**|**0.867**|**0.907**|**0.830**|**0.860**|**0.822**|**0.902**|
+| Random Forest    | 0.803    | 0.810 | 0.856   | 0.769   | 0.796   | 0.752   | 0.844   |
+| Extracted *p*-values | 0.515| 0.495 | 0.485   | 0.505   | 0.534   | 0.545   | 0.524   |
+| Extracted NL Indicators | 0.530| 0.497 | 0.474   | 0.523   | 0.559   | 0.584   | 0.536   |
+| Number of Words   | 0.475   | 0.441 | 0.423   | 0.461   | 0.505   | 0.525   | 0.486   |
+
+
+Table: Different metric scores for model evaluation of test data from the annotated `MAIN` corpus, consisting of *n* = 198 abstracts authored by researchers affiliated with German clinical psychology departments and published between 2012 and 2023
+
+
 ![alt text](https://github.com/PsyCapsLock/PubBiasDetect/blob/main/img/barplot_results_models.jpg?raw=true)
-
-
-
-|              | Accuracy | F1   | Recall | Precision | F1    | Recall | Precision |
-|--------------|----------|------|--------|-----------|-------|--------|-----------|
-| SciBERT      | 0.924    | 0.925| 0.925  | 0.925     | 0.923 | 0.923  | 0.923     |
-| RF           | 0.811    | 0.821| 0.796  | 0.847     | 0.800 | 0.829  | 0.773     |
-| Text Length  | 0.544    | 0.587| 0.621  | 0.557     | 0.490 | 0.459  | 0.525     |
+Figure: Comparing model performances across in-domain and out-of-domain data; Colored bars represent different model types; Samples: `MAIN` test: n = 198 abstracts; `VAL1`: n = 150 abstracts; `VAL2`: n = 150 abstracts.
