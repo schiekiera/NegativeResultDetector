@@ -1,11 +1,13 @@
 # PubBiasDetect
-Documentation, code and data for the project "Publication Bias Research in Clincial Psychology Using Natural Language Processing" by Louis Schiekiera
+Documentation, code and data for the project "Publication Bias Research in Clincial Psychology Using Natural Language Processing" by Louis Schiekiera.
 
 
 ## Table of Contents
 
+
 - [Abstract](#abstract)
 - [Results](#results)
+- [Model](#model)
 
 
 
@@ -99,3 +101,6 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
 
 ![alt text](https://github.com/PsyCapsLock/PubBiasDetect/blob/main/img/barplot_results_models.jpg?raw=true)
 **Figure**: Comparing model performances across in-domain and out-of-domain data; Colored bars represent different model types; Samples: `MAIN` test: n = 198 abstracts; `VAL1`: n = 150 abstracts; `VAL2`: n = 150 abstracts.
+
+## Model
+Model is available at [HuggingFace](https://huggingface.co/PsyCapsLock/PubBiasDetect).
