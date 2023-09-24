@@ -24,10 +24,8 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
    
 ## Results
 
-|                  | Accuracy | Mixed & Negative Results |  |  | Positive Results Only |  |  |
-|------------------|----------|---|--------|-----------|---|--------|-----------|
+|                  | Accuracy <td colspan=3>triple Mixed & Negative Results <td colspan=3>triple Positive Results Only 
 |                  |          | F1| Recall | Precision | F1| Recall | Precision |
-|------------------|----------|---|--------|-----------|---|--------|-----------|
 | SciBERT          | **0.864**|**0.867**|**0.907**|**0.830**|**0.860**|**0.822**|**0.902**|
 | Random Forest    | 0.803    | 0.810 | 0.856   | 0.769   | 0.796   | 0.752   | 0.844   |
 | Extracted *p*-values | 0.515| 0.495 | 0.485   | 0.505   | 0.534   | 0.545   | 0.524   |
