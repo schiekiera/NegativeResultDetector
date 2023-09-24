@@ -24,13 +24,82 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
    
 ## Results
 
-|                  | Accuracy <td colspan=3>triple Mixed & Negative Results <td colspan=3>triple Positive Results Only 
-|                  |          | F1| Recall | Precision | F1| Recall | Precision |
-| SciBERT          | **0.864**|**0.867**|**0.907**|**0.830**|**0.860**|**0.822**|**0.902**|
-| Random Forest    | 0.803    | 0.810 | 0.856   | 0.769   | 0.796   | 0.752   | 0.844   |
-| Extracted *p*-values | 0.515| 0.495 | 0.485   | 0.505   | 0.534   | 0.545   | 0.524   |
-| Extracted NL Indicators | 0.530| 0.497 | 0.474   | 0.523   | 0.559   | 0.584   | 0.536   |
-| Number of Words   | 0.475   | 0.441 | 0.423   | 0.461   | 0.505   | 0.525   | 0.486   |
+<table>
+    <caption>Different metric scores for model evaluation of the <code>MAIN</code> corpus</caption>
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th rowspan="2">Accuracy</th>
+            <th colspan="3">Mixed &amp; Negative Results</th>
+            <th colspan="3">Positive Results Only</th>
+        </tr>
+        <tr>
+            <th>F1</th>
+            <th>Recall</th>
+            <th>Precision</th>
+            <th>F1</th>
+            <th>Recall</th>
+            <th>Precision</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SciBERT</td>
+            <td><strong>0.864</strong></td>
+            <td><strong>0.867</strong></td>
+            <td><strong>0.907</strong></td>
+            <td><strong>0.830</strong></td>
+            <td><strong>0.860</strong></td>
+            <td><strong>0.822</strong></td>
+            <td><strong>0.902</strong></td>
+        </tr>
+        <tr>
+            <td>Random Forest</td>
+            <td>0.803</td>
+            <td>0.810</td>
+            <td>0.856</td>
+            <td>0.769</td>
+            <td>0.796</td>
+            <td>0.752</td>
+            <td>0.844</td>
+        </tr>
+        <tr>
+            <td>Extracted <em>p</em>-values</td>
+            <td>0.515</td>
+            <td>0.495</td>
+            <td>0.485</td>
+            <td>0.505</td>
+            <td>0.534</td>
+            <td>0.545</td>
+            <td>0.524</td>
+        </tr>
+        <tr>
+            <td>Extracted NL Indicators</td>
+            <td>0.530</td>
+            <td>0.497</td>
+            <td>0.474</td>
+            <td>0.523</td>
+            <td>0.559</td>
+            <td>0.584</td>
+            <td>0.536</td>
+        </tr>
+        <tr>
+            <td>Number of Words</td>
+            <td>0.475</td>
+            <td>0.441</td>
+            <td>0.423</td>
+            <td>0.461</td>
+            <td>0.505</td>
+            <td>0.525</td>
+            <td>0.486</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="8">Note: Test data from the annotated <code>MAIN</code> corpus, consisting of <em>n</em> = 198 abstracts authored by researchers affiliated with German clinical psychology departments and published between 2012 and 2023</td>
+        </tr>
+    </tfoot>
+</table>
 
 
 Table: Different metric scores for model evaluation of test data from the annotated `MAIN` corpus, consisting of *n* = 198 abstracts authored by researchers affiliated with German clinical psychology departments and published between 2012 and 2023
