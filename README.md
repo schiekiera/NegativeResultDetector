@@ -1,8 +1,6 @@
 # PubBiasDetect
 Documentation, code and data for the project "Publication Bias Research in Clincial Psychology Using Natural Language Processing" by Louis Schiekiera
 
-![alt text](https://github.com/PsyCapsLock/PubBiasDetect/blob/main/img/inference_longitudinal_comparison.jpg?raw=true)
-
 
 ## Table of Contents
 
@@ -25,7 +23,6 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
 ## Results
 
 <table>
-    <caption>Different metric scores for model evaluation of the <code>MAIN</code> corpus</caption>
     <thead>
         <tr>
             <th rowspan="2"></th>
@@ -94,16 +91,11 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
             <td>0.486</td>
         </tr>
     </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="8">Note: Test data from the annotated <code>MAIN</code> corpus, consisting of <em>n</em> = 198 abstracts authored by researchers affiliated with German clinical psychology departments and published between 2012 and 2023</td>
-        </tr>
-    </tfoot>
 </table>
 
+**Table**: Different metric scores for model evaluation of test data from the annotated `MAIN` corpus, consisting of *n* = 198 abstracts authored by researchers affiliated with German clinical psychology departments and published between 2012 and 2023
 
-Table: Different metric scores for model evaluation of test data from the annotated `MAIN` corpus, consisting of *n* = 198 abstracts authored by researchers affiliated with German clinical psychology departments and published between 2012 and 2023
-
+<br>
 
 ![alt text](https://github.com/PsyCapsLock/PubBiasDetect/blob/main/img/barplot_results_models.jpg?raw=true)
-Figure: Comparing model performances across in-domain and out-of-domain data; Colored bars represent different model types; Samples: `MAIN` test: n = 198 abstracts; `VAL1`: n = 150 abstracts; `VAL2`: n = 150 abstracts.
+**Figure**: Comparing model performances across in-domain and out-of-domain data; Colored bars represent different model types; Samples: `MAIN` test: n = 198 abstracts; `VAL1`: n = 150 abstracts; `VAL2`: n = 150 abstracts.
