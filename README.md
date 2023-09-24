@@ -12,9 +12,14 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
 
 
 ## Abstract  
-> **Background:** Publication bias (PB) leads to the overrepresentation of positive results in psychological science, creating issues like inflated effect sizes and replication problems. Although awareness about this bias has increased in the wake of the replication crisis, the prevalence of negative or mixed results hasn't been thoroughly explored. This study aims to fill this gap and facilitate research synthesis using Natural Language Processing (NLP) tools, rather than relying on time and resource-consuming manual classification.
-> **Methods:** We will classify and evaluate 2,469 abstracts from clinical psychology research using supervised machine learning models like Random Forest and SciBERT, trained on human-annotated data. The performance of these models will be validated against other abstract sets. Using these models, we aim to predict the positivity of results in a large sample of unannotated abstracts dating from 1990 to 2023, helping us to explore if open science trends align with an increase in negative or mixed results.
-> **Results:** Our preliminary results indicate that the SciBERT model outperforms the other models in accuracy, providing promising groundwork for further research and implementation.
+**Background:** To address the gap in machine learning tools for publication bias research, we classify scientific abstracts from clinical psychology and psychotherapy using natural language processing.
+
+**Methods:** We annotated over 1,900 abstracts into two categories: "positive results only" and "mixed and negative results", and trained models using random forest and SciBERT. These models were validated against one in-domain and two out-of-domain data sets comprising psychotherapy abstracts. We compared model performance with three benchmarks: natural language indicators of result types, *p*-values, and abstract length. We then utilized the best-performing model to analyze trends in result types of over 21,000 psychotherapy abstracts. We hypothesized a linear increase in abstracts reporting solely positive results from 1990 to 2004, and a linear decrease from 2005 to 2023 due to methodological debates around false-positive results. We fitted logistic regression models to predict trends in result types.
+
+**Results:** SciBERT outperformed all benchmarks and random forest in in-domain (accuracy: 0.86) and out-of-domain data (accuracy: 0.85-0.88). Results from the trend analysis revealed non-significant effects of publication year for both periods, yet significant positive linear and negative quadratic effects over the entire span. The "positive results only" proportion rose from the early 1990s to the early 2010s, declining slightly until the early 2020s. In line with this, we observed a similar pattern for "*p* > .05" and "*p* < .05", but no significant trend for natural language indicators.
+
+**Discussion:** Machine learning models could be crucial in future efforts to understand and address publication bias.
+
  
    
 ## Preliminary Results
