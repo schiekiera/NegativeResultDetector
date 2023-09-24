@@ -103,4 +103,4 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
 **Figure**: Comparing model performances across in-domain and out-of-domain data; Colored bars represent different model types; Samples: `MAIN` test: n = 198 abstracts; `VAL1`: n = 150 abstracts; `VAL2`: n = 150 abstracts.
 
 ## Model
-Model is available at [HuggingFace](https://huggingface.co/PsyCapsLock/PubBiasDetect).
+Model is available at [HuggingFace](https://huggingface.co/ClinicalMetascience/PubBiasDetect).
