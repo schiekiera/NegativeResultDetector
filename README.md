@@ -4,10 +4,7 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
 ## Table of Contents
 
 - [Abstract](#abstract)
-- [Preliminary Results](#results)
-
-
-
+- [Results](#results)
 
 
 
@@ -22,7 +19,12 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
 
  
    
-## Preliminary Results
+## Results
+
+![alt text](https://github.com/PsyCapsLock/PubBiasDetect/blob/main/img/barplot_results_models.jpg?raw=true)
+
+
+
 |              | Accuracy | F1   | Recall | Precision | F1    | Recall | Precision |
 |--------------|----------|------|--------|-----------|-------|--------|-----------|
 | SciBERT      | 0.924    | 0.925| 0.925  | 0.925     | 0.923 | 0.923  | 0.923     |
