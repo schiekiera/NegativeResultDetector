@@ -1,13 +1,10 @@
 # NegativeResultDetector
-Documentation, code and data for the project "Publication Bias Research in Clincial Psychology Using Natural Language Processing" by Louis Schiekiera.
+Documentation, code and data for the project "Publication Bias Research in Clincial Psychology Using Natural Language Processing" by Louis Schiekiera. The best-performing model, SciBERT, was deployed under the name 'NegativeResultDetector' on [HuggingFace](https://huggingface.co/ClinicalMetascience/NegativeResultDetector). It can be used directly via a graphical user interface for single abstract evaluations or for larger-scale inference by downloading the model files from HuggingFace, utilizing this [script](https://github.com/PsyCapsLock/NegativeResultDetector/blob/main/Scripts/Predict_Example_Abstracts_using_NegativeResultDetector.ipynb) from the GitHub repository.
 
 
 ## Table of Contents
-
-
 - [Abstract](#abstract)
 - [Results](#results)
-- [Model](#model)
 
 
 
@@ -99,8 +96,5 @@ Documentation, code and data for the project "Publication Bias Research in Clinc
 
 <br>
 
-![alt text](https://github.com/PsyCapsLock/PubBiasDetect/blob/main/img/barplot_results_models.jpg?raw=true)
+![alt text](https://github.com/PsyCapsLock/NegativeResultDetector/blob/main/img/barplot_results_models.jpg?raw=true)
 **Figure**: Comparing model performances across in-domain and out-of-domain data; Colored bars represent different model types; Samples: `MAIN` test: n = 198 abstracts; `VAL1`: n = 150 abstracts; `VAL2`: n = 150 abstracts.
-
-## Model
-Model is available at [HuggingFace](https://huggingface.co/ClinicalMetascience/PubBiasDetect).
