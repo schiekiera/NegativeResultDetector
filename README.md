@@ -1,4 +1,4 @@
-# PubBiasDetect
+# NegativeResultDetector
 Documentation, code and data for the project "Publication Bias Research in Clincial Psychology Using Natural Language Processing" by Louis Schiekiera.
 
 
