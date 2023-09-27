@@ -13,7 +13,7 @@ The best-performing model, SciBERT, was deployed under the name *'NegativeResult
 ## Abstract  
 **Background:** To address the gap in machine learning tools for publication bias research, we classify scientific abstracts from clinical psychology and psychotherapy using natural language processing.
 
-**Methods:** We annotated over 1,900 abstracts into two categories: "positive results only" and "mixed and negative results", and trained models using random forest and SciBERT. These models were validated against one in-domain and two out-of-domain data sets comprising psychotherapy abstracts. We compared model performance with three benchmarks: natural language indicators of result types, *p*-values, and abstract length. We then utilized the best-performing model to analyze trends in result types of over 20,000 psychotherapy abstracts. We hypothesized a linear increase in abstracts reporting solely positive results from 1990 to 2004, and a linear decrease from 2005 to 2023 due to methodological debates around false-positive results. We fitted logistic regression models to predict trends in result types.
+**Methods:** We annotated over 1,900 abstracts into two categories: "positive results only" and "mixed and negative results", and trained models using random forest and SciBERT. These models were validated against one in-domain and two out-of-domain data sets comprising psychotherapy abstracts. We compared model performance with three benchmarks: natural language indicators of result types, *p*-values, and abstract length. We then utilized the best-performing model to analyze trends in result types of over 20,000 psychotherapy abstracts. We hypothesized a linear increase in abstracts reporting solely positive results from 1990 to 2005, and a linear decrease from 2005 to 2022 due to methodological debates around false-positive results. We fitted logistic regression models to predict trends in result types.
 
 **Results:** SciBERT outperformed all benchmarks and random forest in in-domain (accuracy: 0.86) and out-of-domain data (accuracy: 0.85-0.88). Results from the trend analysis revealed non-significant effects of publication year for both periods, yet significant positive linear and negative quadratic effects over the entire span. The "positive results only" proportion rose from the early 1990s to the early 2010s, declining slightly until the early 2020s. In line with this, we observed a similar pattern for "*p* > .05" and "*p* < .05", but no significant trend for natural language indicators of positive results and a significant negative linear but positive quadratic effect for natural language indicators of negative results.
 
@@ -94,7 +94,7 @@ The best-performing model, SciBERT, was deployed under the name *'NegativeResult
     </tbody>
 </table>
 
-**Table**: Different metric scores for model evaluation of test data from the annotated `MAIN` corpus, consisting of *n* = 198 abstracts authored by researchers affiliated with German clinical psychology departments and published between 2012 and 2023
+**Table**: Different metric scores for model evaluation of test data from the annotated `MAIN` corpus, consisting of *n* = 198 abstracts authored by researchers affiliated with German clinical psychology departments and published between 2012 and 2022
 
 <br>
 
