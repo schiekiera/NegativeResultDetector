@@ -9,12 +9,10 @@ library(report)
 
 # github urls
 url_function = 'https://github.com/PsyCapsLock/NegativeResultDetector/blob/main/Utilities/Functions.R?raw=true'
-url_DeWinter = 'https://github.com/PsyCapsLock/NegativeResultDetector/blob/main/Utilities/Functions_DeWinter_Dodou_2015_A_surge_of_p-values.R?raw=true'
 url_inference = 'https://github.com/PsyCapsLock/PubBiasDetect/blob/main/Data/Results/predictions_all_approaches_inference.csv?raw=true'
 
 # functions
 source(url_function)
-source(url_DeWinter)
 
 # data
 df<-read_csv(url_inference)
