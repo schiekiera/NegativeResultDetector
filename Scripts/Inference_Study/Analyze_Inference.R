@@ -5,14 +5,10 @@ rm(list = ls())
 library(tidyverse)
 library(report)
 
-# read data and functions
+# read data
 
 # github urls
-url_function = 'https://github.com/PsyCapsLock/NegativeResultDetector/blob/main/Utilities/Functions.R?raw=true'
 url_inference = 'https://github.com/PsyCapsLock/PubBiasDetect/blob/main/Data/Results/predictions_all_approaches_inference.csv?raw=true'
-
-# functions
-source(url_function)
 
 # data
 df<-read_csv(url_inference)
@@ -26,17 +22,17 @@ df$year_cubic<- df$year^3
 
 # MODEL1: Hypothesis 1. Model Linear Term Year: 1990 - 2005
 df1 <- df[df$year <= 2005, ]
-model_1990_2005<-glm(scibert_predictions ~ year, data = df1, family = binomial())
+model_1990_2005<-glm(scibert_predictions ~ year, data = df1, family = binomial(link="logit"))
 report(model_1990_2005)
 
 # MODEL2: Hypothesis 2. Model Linear Term Year: 2005 - 2022
 df2 <- df[df$year >= 2005, ]
-model_2005_2022<-glm(scibert_predictions ~ year, data = df2, family = binomial())
+model_2005_2022<-glm(scibert_predictions ~ year, data = df2, family = binomial(link="logit"))
 report(model_2005_2022)
 
 
 # MODEL3a:  Base Model Linear Term: 1990 - 2022
-model_1990_2022 <- glm(scibert_predictions ~ year, data = df, family = binomial())
+model_1990_2022 <- glm(scibert_predictions ~ year, data = df, family = binomial(link="logit"))
 report(model_1990_2022)
 AIC(model_1990_2022)
 
