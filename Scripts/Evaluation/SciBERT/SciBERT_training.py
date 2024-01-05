@@ -12,18 +12,12 @@ from datasets import load_dataset
 
 ## github urls
 url_train =       'https://github.com/PsyCapsLock/PubBiasDetect/blob/main/Data/Train_Test_Dev/train_2023-07-26.csv?raw=true'
-url_test =        'https://github.com/PsyCapsLock/PubBiasDetect/blob/main/Data/Train_Test_Dev/test_2023-07-26.csv?raw=true'
 url_dev =         'https://github.com/PsyCapsLock/PubBiasDetect/blob/main/Data/Train_Test_Dev/dev_2023-07-26.csv?raw=true'
-url_valid_1990 =  'https://github.com/PsyCapsLock/PubBiasDetect/blob/main/Data/Validation/validation_2_1990-2012_2023-07-28.csv?raw=true'
-url_valid_ng =    'https://github.com/PsyCapsLock/PubBiasDetect/blob/main/Data/Validation/validation_1_nongerman_2023-07-28.csv?raw=true'
 
 
 ## load datasets
 dataset = load_dataset('csv', data_files={'train': url_train,
-                                          'test': url_test,
-                                          'dev': url_dev,
-                                          'valid_1990': url_valid_1990,
-                                          'valid_ng': url_valid_ng})
+                                          'dev': url_dev})
 
 ## Preprocessing for Labels
 # Mapping of labels to integer values
@@ -42,9 +36,6 @@ def update_dataset_features(dataset_split):
 # Apply updates for each dataset split
 update_dataset_features("train")
 update_dataset_features("dev")
-update_dataset_features("test")
-update_dataset_features("valid_1990")
-update_dataset_features("valid_ng")
 
 ## load tokenizer
 from transformers import AutoTokenizer
