@@ -10,7 +10,7 @@ notebook_login()
 ## load data
 from datasets import load_dataset
 
-## github urls
+## github urls 
 url_train =       'https://github.com/PsyCapsLock/PubBiasDetect/blob/main/Data/Train_Test_Dev/train_2023-07-26.csv?raw=true'
 url_dev =         'https://github.com/PsyCapsLock/PubBiasDetect/blob/main/Data/Train_Test_Dev/dev_2023-07-26.csv?raw=true'
 
