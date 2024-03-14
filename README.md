@@ -103,4 +103,4 @@ The best-performing model, SciBERT, was deployed under the name *'NegativeResult
 <br>
 
 ## Funding & Project
-This study was conductet as part of the [PANNE Project](https://www.berlin-university-alliance.de/en/commitments/research-quality/project-list-20/panne/index.html) (German acronym for “publication bias analysis of non-publication and non-reception of results in a disciplinary comparison”) at Freie Universität Berlin and was funded by the Berlin University Alliance.
+This study was conducted as part of the [PANNE Project](https://www.berlin-university-alliance.de/en/commitments/research-quality/project-list-20/panne/index.html) (German acronym for “publication bias analysis of non-publication and non-reception of results in a disciplinary comparison”) at Freie Universität Berlin and was funded by the Berlin University Alliance.
