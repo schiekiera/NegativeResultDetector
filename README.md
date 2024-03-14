@@ -21,7 +21,7 @@ The best-performing model, SciBERT, was deployed under the name *'NegativeResult
 <br>
 
 ## Results
-**Table 1**
+**Table 1** <br>
 *Different metric scores for model evaluation of test data from the annotated `MAIN` corpus, consisting of *n* = 198 abstracts authored by researchers affiliated with German clinical psychology departments and published between 2012 and 2022*
 <table>
     <thead>
@@ -96,10 +96,11 @@ The best-performing model, SciBERT, was deployed under the name *'NegativeResult
 
 <br>
 
-**Figure 1**
+**Figure 1** <br>
 *Comparing model performances across in-domain and out-of-domain data; Colored bars represent different model types; Samples: `MAIN` test: n = 198 abstracts; `VAL1`: n = 150 abstracts; `VAL2`: n = 150 abstracts.*
-
 ![alt text](https://github.com/PsyCapsLock/NegativeResultDetector/blob/main/img/barplot_results_models.jpg?raw=true)
+
+<br>
 
 ## Funding
 This project was funded by the Berlin University Alliance.
