@@ -18,9 +18,11 @@ The best-performing model, SciBERT, was deployed under the name *'NegativeResult
 
 **Discussion:** Machine learning could support future efforts to understand patterns of positive results in large data sets. The fine-tuned SciBERT model was deployed for public use.
 
+<br>
 
 ## Results
-
+**Table 1**
+*Different metric scores for model evaluation of test data from the annotated `MAIN` corpus, consisting of *n* = 198 abstracts authored by researchers affiliated with German clinical psychology departments and published between 2012 and 2022*
 <table>
     <thead>
         <tr>
@@ -92,12 +94,12 @@ The best-performing model, SciBERT, was deployed under the name *'NegativeResult
     </tbody>
 </table>
 
-**Table**: Different metric scores for model evaluation of test data from the annotated `MAIN` corpus, consisting of *n* = 198 abstracts authored by researchers affiliated with German clinical psychology departments and published between 2012 and 2022
-
 <br>
 
+**Figure 1**
+*Comparing model performances across in-domain and out-of-domain data; Colored bars represent different model types; Samples: `MAIN` test: n = 198 abstracts; `VAL1`: n = 150 abstracts; `VAL2`: n = 150 abstracts.*
+
 ![alt text](https://github.com/PsyCapsLock/NegativeResultDetector/blob/main/img/barplot_results_models.jpg?raw=true)
-**Figure**: Comparing model performances across in-domain and out-of-domain data; Colored bars represent different model types; Samples: `MAIN` test: n = 198 abstracts; `VAL1`: n = 150 abstracts; `VAL2`: n = 150 abstracts.
 
 ## Funding
 This project was funded by the Berlin University Alliance.
