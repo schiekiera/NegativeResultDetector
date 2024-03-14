@@ -1,5 +1,6 @@
 # NegativeResultDetector
-Documentation, code and data for the study "Classifying Positive Results in Clinical Psychology Using Natural Language Processing" by Louis Schiekiera, Helen Niemeyer & Jonathan Diederichs. The preprint for this study is available on [PsyArxiv](https://osf.io/preprints/psyarxiv/uxyzh).
+Documentation, code and data for the study "Classifying Positive Results in Clinical Psychology Using Natural Language Processing" by Louis Schiekiera, Jonathan 
+Diederichs & Helen Niemeyer. The preprint for this study is available on [PsyArxiv](https://osf.io/preprints/psyarxiv/uxyzh).
 
 The best-performing model, SciBERT, was deployed under the name *'NegativeResultDetector'* on [HuggingFace](https://huggingface.co/ClinicalMetascience/NegativeResultDetector). It can be used directly via a graphical user interface for single abstract evaluations or for larger-scale inference by downloading the model files from HuggingFace, utilizing this [script](https://github.com/schiekiera/NegativeResultDetector/blob/main/Scripts/example_folder/Predict_Example_Abstracts_using_NegativeResultDetector.ipynb) from the GitHub repository.
 
