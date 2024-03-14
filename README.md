@@ -9,21 +9,16 @@ The best-performing model, SciBERT, was deployed under the name *'NegativeResult
 - [Results](#results)
 
 
-
 ## Abstract  
-**Background:** In this study, we classified scientific abstracts from clinical psychology and psychotherapy using natural language processing, to address the gap in machine learning tools for publication bias research.
+**Background:** This study addresses the gap in machine learning tools for positive results classification by evaluating the performance of SciBERT, a transformer model pretrained on scientific text, and random forest in clinical psychology abstracts. 
 
-**Methods:** We annotated over 1,900 abstracts into two categories: "positive results only" and "mixed or negative results", and trained models using random forest and SciBERT. These models were validated against one in-domain and two out-of-domain data sets. We compared model performance on three benchmarks: natural language indicators of result types, *p*-values, and abstract length. We then utilized the best-performing model to analyze trends in result types of over 20,000 psychotherapy abstracts. We hypothesized a linear increase in abstracts reporting solely positive results from 1990 to 2005, and a linear decrease from 2005 to 2022 due to methodological debates around false-positive results. We fitted logistic regression models to predict trends in result types.
+**Methods:** Over 1,900 abstracts were annotated into two categories: ‘positive results only’ and ‘mixed or negative results’. Model performance was evaluated on three benchmarks. The best-performing model was utilized to analyze trends in over 20,000 psychotherapy study abstracts.
 
-**Results:** SciBERT outperformed all benchmarks and random forest in in-domain (accuracy: 0.86) and out-of-domain data (accuracy: 0.85-0.88). The SciBERT model was deployed for inference in a graphical user interface and a code version. Results from the trend analysis revealed non-significant effects of publication year for 1990 to 2005 in "positive results only", but a significant decrease for the period 2005 to 2022. When fitting a model over the whole time-span, we observed significant positive linear and negative quadratic effects. The "positive results only" proportion rose from the early 1990s to the early 2010s, declining slightly until the early 2020s. In line with this, we observed a similar pattern for "*p* > .05" and "*p* < .05", but no significant trend for natural language indicators of positive results and a significant negative linear but positive quadratic effect for natural language indicators of negative results.
+**Results:** SciBERT outperformed all benchmarks and random forest in in-domain and out-of-domain data. The trend analysis revealed non-significant effects ofpublication year on positive results for 1990-2005, but a significant decrease in positive results between 2005-2022.  When examining the entire time-span, significant positive linear and negative quadratic effects were observed.
 
-**Discussion:** Machine learning models could be crucial in future efforts to understand and address publication bias.
-
- 
+**Discussion:** Machine learning could support future efforts to understand patterns of positive results in large data sets. The fine-tuned SciBERT model was deployed for public use.
 
 
-
-   
 ## Results
 
 <table>
