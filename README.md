@@ -103,14 +103,7 @@ The best-performing model, SciBERT, was deployed under the name *'NegativeResult
 
 <br>
 
-<<<<<<< HEAD
-![alt text](https://github.com/PsyCapsLock/NegativeResultDetector/blob/main/img/barplot_results_models.jpg?raw=true)
-**Figure**: Comparing model performances across in-domain and out-of-domain data; Colored bars represent different model types; Samples: `MAIN` test: n = 198 abstracts; `VAL1`: n = 150 abstracts; `VAL2`: n = 150 abstracts.
 
 
-## Funding & Project
-This study was conducted as part of the PANNE Project (German acronym for “publication bias analysis of non-publication and non-reception of results in a disciplinary comparison”) at Freie Universität Berlin and was funded by the Berlin University Alliance. The authors are members of the Berlin University Alliance.
-=======
 ## Funding & Project
 This study was conducted as part of the [PANNE Project](https://www.berlin-university-alliance.de/en/commitments/research-quality/project-list-20/panne/index.html) (German acronym for “publication bias analysis of non-publication and non-reception of results in a disciplinary comparison”) at Freie Universität Berlin and was funded by the Berlin University Alliance.
->>>>>>> ee4a6a4847130e1b559844ea550fe154d4effacd
