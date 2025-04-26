@@ -107,3 +107,9 @@ The best-performing model, SciBERT, was deployed under the name *'NegativeResult
 
 ## Funding & Project
 This study was conducted as part of the [PANNE Project](https://www.berlin-university-alliance.de/en/commitments/research-quality/project-list-20/panne/index.html) (German acronym for “publication bias analysis of non-publication and non-reception of results in a disciplinary comparison”) at Freie Universität Berlin and was funded by the Berlin University Alliance.
+
+
+## Citation
+If you use the data or the code, please cite the paper as follows:
+
+Schiekiera, L., Niemeyer, H., & Diederichs, J. (2024). Political bias in historiography - an experimental investigation of preferences for publication as a function of political orientation. *F1000Research, 14*, 320. https://f1000research.com/articles/14-320/v1
